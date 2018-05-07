@@ -6,7 +6,7 @@
         basicButtons[i].addEventListener('click', function(e) {
             e.preventDefault();
             const buttonValue = basicButtons[i].value;
-            document.querySelector('.screen string').innerHTML += buttonValue;
+            document.querySelector('.screen span').innerHTML += buttonValue;
         });
     }
 })();
@@ -18,7 +18,7 @@
         
     function clearScreen(e) {
         e.preventDefault();
-        document.querySelector('.screen string').innerHTML = "";
+        document.querySelector('.screen span').innerHTML = "";
     }
 })(); 
 
@@ -29,9 +29,9 @@
         
     function correctScreen(e) {
         e.preventDefault();
-        let correction = document.querySelector('.screen string').innerHTML;
+        let correction = document.querySelector('.screen span').innerHTML;
         correction = correction.slice(0, -1);
-        document.querySelector('.screen string').innerHTML = correction;
+        document.querySelector('.screen span').innerHTML = correction;
     }
 })(); 
 
@@ -42,9 +42,9 @@
         
     function getResult(e) {
         e.preventDefault();
-        let result = eval(document.querySelector('.screen string').innerHTML);
+        let result = eval(document.querySelector('.screen span').innerHTML);
         
-        document.querySelector('.screen string').innerHTML = result;
+        document.querySelector('.screen span').innerHTML = result;
     }
 })();     
     
