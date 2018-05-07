@@ -30,3 +30,6 @@ button {
     font-size: 1.5rem;
     border: 0;
 }
+button:hover {
+    background-color: #808b96;
+}
